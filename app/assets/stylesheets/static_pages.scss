@@ -1,0 +1,96 @@
+body {
+
+	font-family: 'Montserrat', sans-serif; }
+
+footer { 
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #173e43; 
+	color:white;
+	text-align: center;
+
+}
+
+footer h6 { 
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color:white;
+	text-align: center;
+
+}
+
+.si { padding: 20px 5px 0 0 ;}
+
+#copy { padding-top: 20px; }
+
+.fl {
+	padding-top: 20px;
+	text-align:center;
+
+}
+
+.fl a {
+	color: white;
+}
+
+.fl a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+h1 { 
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #dddfd4; 
+	color:#173e43;
+	text-align: center;
+
+}
+
+h2 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #dddfd4; 
+	color:#173e43;
+	text-align: center; }
+
+p {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: white; 
+	color:black;
+	text-align: center; }
+
+ .navbar li {
+	display: inline-block;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #173e43; 
+	color:white;
+	text-align: center;
+	padding-right: 20px;}
+
+.navbar { background-color: #173e43;
+	  padding-right: 20px;
+
+ }
+
+ .navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+}	
+
+.btn {
+
+	color:white;
+	background-color: #173e43;
+	border-radius: 10px;
+	padding: 18px 28px;
+    font-size: 15px; 
+    line-height: normal;
+}
+
