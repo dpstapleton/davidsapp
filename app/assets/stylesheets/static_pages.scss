@@ -38,7 +38,8 @@ footer h6 {
 	color: white;
 }
 
-h1 { 
+.welcome { 
+	margin-top:-20px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	background-color: #dddfd4; 
@@ -47,10 +48,10 @@ h1 {
 
 }
 
-h2 {
+.headerindex {
 	padding-top: 20px;
 	padding-bottom: 20px;
-	background-color: #dddfd4; 
+	background-color: #f4f7f9; 
 	color:#173e43;
 	text-align: center; }
 
@@ -94,3 +95,13 @@ p {
     line-height: normal;
 }
 
+.bike1 {
+    vertical-align: middle;
+     display:block;
+    margin:auto;
+}
+
+.imgbike {
+	background-color: #f4f7f9;
+	padding-bottom: 30px;
+}
