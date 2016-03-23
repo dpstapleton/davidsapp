@@ -1,0 +1,66 @@
+
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-xs-12">
+    <p id="notice"><%= notice %></p>
+  </div>
+  <div class="row">
+      <div class="col-md-6 col-xs-12">
+    <h1 class="headline">Current Listings</h1>
+  </div>
+    <div class="col-md-6 col-xs-12">
+    <h4 class="new_product"><%= link_to 'Create a New Product', new_product_path %></h4>
+      </div>
+  </div>
+
+ <!-- <div class="row">
+      <div class="col-md-6 col-xs-12">
+        <a href=""><img class="img-responsive" src="" alt="" /></a>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <h2><a href="/products/13">Another test bike</a></h2>
+        <p><span>Color: </span>some color</p>
+        <p><span>Price: $ </span>200.0</p>
+        <p>Testing again</p>
+        <p>Average Rating: <div class="rated" data-score="3.0"></div></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-6 col-xs-12">
+        <a href=""><img class="img-responsive" src="" alt="" /></a>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <h2><a href="/products/13">Another test bike</a></h2>
+        <p><span>Color: </span>some color</p>
+        <p><span>Price: $ </span>200.0</p>
+        <p>Testing again</p>
+        <p>Average Rating: <div class="rated" data-score="3.0"></div></p>
+      </div>
+    </div>
+       <hr> -->
+
+    <% @products.each do |product| %>
+      
+      <div class="row">
+      <div class="col-md-5 col-xs-12">
+      <p><%= product.image_url %></p>
+       </div>
+      <div class="col-md-5 col-xs-12 description">
+        <h2><%= product.name %></h2>
+         <p><%= product.description %></p>
+      </div>
+        <div class="col-md-2 col-xs-12 options">
+       <p><%= link_to 'Show', product %></p>
+      <p><%= link_to 'Edit', edit_product_path(product) %></p>
+        <p><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+         </div>
+    </div>
+        <hr>
+    <% end %>
+
+</div>
+
+</section>
