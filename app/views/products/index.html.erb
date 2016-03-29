@@ -11,7 +11,7 @@
     <h1 class="headline">Current Listings</h1>
   </div>
     <div class="col-md-6 col-xs-12">
-    <h4 class="new_product"><%= link_to 'Create a New Product', new_product_path %></h4>
+    <h4><%= link_to 'Create a New Product', new_product_path, class: 'new_product' %></h4>
       </div>
   </div>
 
@@ -42,25 +42,23 @@
     </div>
        <hr> -->
 
-    <% @products.each do |product| %>
-      
-      <div class="row">
-      <div class="col-md-5 col-xs-12">
-      <p><%= product.image_url %></p>
-       </div>
-      <div class="col-md-5 col-xs-12 description">
-        <h2><%= product.name %></h2>
-         <p><%= product.description %></p>
-      </div>
-        <div class="col-md-2 col-xs-12 options">
-       <p><%= link_to 'Show', product %></p>
-      <p><%= link_to 'Edit', edit_product_path(product) %></p>
-        <p><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
-         </div>
-    </div>
-        <hr>
-    <% end %>
 
+    <div class="container-fluid">
+  <div class="row prodline">
+    <% @products.each do |product| %>
+      <div class="col-sm-2 col-md-4">
+        <h2><%= product.name %></h2>
+      <%= image_tag(product.image_url, class: "jeans img-responsive") %>
+      <p><%= product.description %></p>
+      <p>Main Color : <%= product.color %></p>
+      <p>Brand : <%= product.brand %></p>
+      <p><%= link_to 'Show |', product, class: 'showbut'  %>
+      <%= link_to 'Edit |', edit_product_path(product), class: 'editbut'  %>
+      <%= link_to 'Destroy', product, class: 'destroybut', method: :delete, data: { confirm: 'Are you sure?' } %></p>
+      </div><!-- /col -->
+    <% end %>
+  </div>
 </div>
+
 
 </section>

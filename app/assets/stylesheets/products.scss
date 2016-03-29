@@ -2,10 +2,45 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.description h2, p {
+.newform h1, p {text-align: center}
+
+.headline { 
+
+	padding-bottom: 30px;
+
+}
+
+.description h1, h2, p {
 	text-align: center;
 }
 
-.new_product { float:right;}
+.new_product { float:right;
+font-size: 15px;
+}
 
 .edit_back { text-align: center;}
+
+.jeans { 
+
+	height: 300px;
+	width: 250px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.prodline {padding-bottom: 50px}
+
+.editbut:hover, .destroybut:hover, .showbut:hover, .new_product:hover {
+
+	text-decoration: none;
+	background-color: transparent;
+	color:orange;
+}
+
+h2 {
+	color:orange;
+	padding-bottom: 10px ;
+
+	 }

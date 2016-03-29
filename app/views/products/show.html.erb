@@ -12,16 +12,21 @@
   <strong>Description:</strong>
   <%= @product.description %>
 </p>
-
 <p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
+ <%= image_tag(@product.image_url, class: "jeans img-responsive") %>
 </p>
-
-<div class ="edit_back">
+<p>
+  <strong>Brand:</strong>
+  <%= @product.brand %>
+</p>
+<p>
+  <strong>Color:</strong>
+  <%= @product.color %>
+</p>
+<p>
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
-</div>
+</p>
 
 </div>
 </div>
