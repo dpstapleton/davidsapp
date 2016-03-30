@@ -2,45 +2,61 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.newform h1, p {text-align: center}
 
-.headline { 
 
-	padding-bottom: 30px;
-
+.list h4 {
+    float: right;
 }
 
-.description h1, h2, p {
-	text-align: center;
+.headline {
+    text-align: center;
+    padding-bottom: 30px;
 }
 
-.new_product { float:right;
-font-size: 15px;
+.description h1,h2,p {
+    text-align: center;
 }
 
-.edit_back { text-align: center;}
-
-.jeans { 
-
-	height: 300px;
-	width: 250px;
-	display: block;
+.jeans {
+    height: 300px;
+    width: 250px;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-
 }
 
-.prodline {padding-bottom: 50px}
-
-.editbut:hover, .destroybut:hover, .showbut:hover, .new_product:hover {
-
-	text-decoration: none;
-	background-color: transparent;
-	color:orange;
+.row {
+    margin-right: -14px;
+    margin-left: -14px;
 }
 
-h2 {
-	color:orange;
-	padding-bottom: 10px ;
+.product-image-wrapper {
+    border: 1px solid #000;
+    margin-bottom: 30px;
+}
 
-	 }
+.product-image-wrapper:hover {
+    border-right: 2px solid orange;
+    border-left: 2px solid orange;
+}
+
+.prodline,.edit {
+    padding-bottom: 50px;
+}
+
+.prodline h2 {
+    color: orange;
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-device-width: 768px) {
+    h1 {
+        text-align: center;
+    }
+
+    .list h4 {
+        text-align: center;
+        padding-bottom: 20px;
+        float: none;
+    }
+}

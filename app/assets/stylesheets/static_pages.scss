@@ -6,8 +6,11 @@ html {
 
 body {
 
-	margin: 0 0 100px; /* bottom = footer height */
+	margin: 0 0 100px 0; /* bottom = footer height */
 	font-family: 'Montserrat', sans-serif; }
+
+
+///footers//
 
 footer { 
 
@@ -18,7 +21,7 @@ footer {
 	position: absolute;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	background-color: black; 
+	background-color: #C88141; 
 	color:white;
 	text-align: center;
 
@@ -51,12 +54,14 @@ footer h6 {
 	color: white;
 }
 
+///intro///
+
 .headerintro { 
 	display: table;
 	background-color:black;
-    background: url(/assets/jeans1.jpg) no-repeat center center ;
+    background: url(/assets/muso.jpg) no-repeat center bottom ;
   	width: 100%;
-    height: 80vh;
+    height: 95vh;
     /*margin-top:-20px;*/
     color: white;
     background-color: #000;
@@ -70,11 +75,19 @@ footer h6 {
 .intro-button {
 
 	text-shadow:none;
-	color:black;
+	background-color: black;
+	color:white;
     margin: -20px -50px; 
     position:relative;
     top:50%; 
-    left:50%;}
+    left:50%;
+    border: none;
+}
+
+#headertext a {
+
+	color:white;
+}
 
 .headerintro .headerbody {
     display: table-cell;
@@ -101,10 +114,28 @@ p {
 	color:black;
 	text-align: center; }
 
-.navbar-default {
-    background-color: #F8F8F8;
-    border-color: #E7E7E7;
-    margin-bottom:0px;
+///navbar///	
+
+/*.my-navbar {
+
+	color:white;
+    background-color: #303030;
+    text-transform: uppercase;
+    height:50px;
+    margin-bottom: 0;
 }
 
+.navbar-custom li a {color: #FFF;}
 
+.navbar-custom li a { color: #FFF; } 
+
+.navbar-custom li a:hover { background-color: transparent;} 
+.navbar-custom li a:focus { background-color: transparent;} 
+
+.navbar-custom .navbar-brand:hover, 
+.navbar-custom  .navbar-brand:focus
+{
+    background-color: transparent;
+    color: #FFF;
+}
+*/

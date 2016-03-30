@@ -1,6 +1,6 @@
 == README
 
-This is Davids App and is his first Ruby on Rails we app. 
+This is Davids App and is his first Ruby on Rails web app. 
 
 Things you may want to cover:
 

@@ -1,21 +1,25 @@
-
-
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 col-xs-12">
-    <p id="notice"><%= notice %></p>
-  </div>
-  <div class="row">
-      <div class="col-md-6 col-xs-12">
-    <h1 class="headline">Current Listings</h1>
-  </div>
-    <div class="col-md-6 col-xs-12">
-    <h4><%= link_to 'Create a New Product', new_product_path, class: 'new_product' %></h4>
-      </div>
-  </div>
-
- <!-- <div class="row">
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <p id="notice"><%= notice %></p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 list">
+                        <h4>
+                        <%= link_to 'List Your Jeans', new_product_path, :class => 'btn btn-default' %></h4>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12">
+                    <h2 class="headline">Current Listings</h2>
+                </div>
+            </div><!-- <div class="row">
       <div class="col-md-6 col-xs-12">
         <a href=""><img class="img-responsive" src="" alt="" /></a>
       </div>
@@ -41,24 +45,26 @@
       </div>
     </div>
        <hr> -->
-
-
-    <div class="container-fluid">
-  <div class="row prodline">
-    <% @products.each do |product| %>
-      <div class="col-sm-2 col-md-4">
-        <h2><%= product.name %></h2>
-      <%= image_tag(product.image_url, class: "jeans img-responsive") %>
-      <p><%= product.description %></p>
-      <p>Main Color : <%= product.color %></p>
-      <p>Brand : <%= product.brand %></p>
-      <p><%= link_to 'Show |', product, class: 'showbut'  %>
-      <%= link_to 'Edit |', edit_product_path(product), class: 'editbut'  %>
-      <%= link_to 'Destroy', product, class: 'destroybut', method: :delete, data: { confirm: 'Are you sure?' } %></p>
-      </div><!-- /col -->
-    <% end %>
-  </div>
-</div>
-
-
-</section>
+            <div class="container-fluid">
+                <div class="row prodline">
+                    <%@products.each do |product| %>
+                    <div class=" col-xs-12 col-sm-6 col-md-4">
+                        <div class="product-image-wrapper">
+                            <h2>
+                            <%= product.name %></h2><%= image_tag(product.image_url, class: "jeans img-responsive") %>
+                            <p>Brand : <%= product.brand %></p>
+                            <p>Price: £ <%= product.price %></p>
+                            <p><a class="btn btn-default add-to-cart" href=
+                            "#"><i class="fa fa-shopping-cart"></i> Buy Now</a>
+                            <%= link_to 'Show', product, :class => 'btn btn-default'%>
+                            <%= link_to 'Edit', edit_product_path(product), :class => 'btn btn-default' %>
+                            <%= link_to 'Destroy', product, :class => 'btn btn-default', method: :delete, data: { confirm: 'Are you sure?' } %></p>
+                        </div>
+                    </div><!-- /col -->
+                    <%end %>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
