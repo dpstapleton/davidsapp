@@ -139,3 +139,52 @@ p {
     color: #FFF;
 }
 */
+
+///carousel///
+
+.caro {padding-top: 20px; padding-bottom: 40px;}
+
+.carousel-caption {font-size: 30px;}
+
+.caro-button { display:block; margin: 0 auto; width: 150px;}
+
+.carousel-indicators {display:none;}
+
+.carousel-inner .item {
+    width: 100%; /*slider width*/
+    max-height: 500px; /*slider height*/
+}
+
+.carousel .item img {
+	margin: 0 auto;
+    width: 40%; /*img width*/
+    max-height: 500px;
+}
+
+.glyphicon-chevron-left, .glyphicon-chevron-right {color:black;}
+
+.carousel-control.right, .carousel-control.left, .carousel-control {
+  background-image:none;
+}
+
+.carousel-control:hover { color:white; background-color: white; background-image: none;}
+
+.carousel-fade .carousel-inner .item {
+opacity: 0;
+transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+left: 0;
+opacity: 0;
+z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+opacity: 1;
+}
+.carousel-fade .carousel-control {
+z-index: 2; }
