@@ -116,29 +116,84 @@ p {
 
 ///navbar///	
 
-/*.my-navbar {
+.btn-search:hover {background-color: orange; color:white;}
 
-	color:white;
+.navbar-custom {
+
     background-color: #303030;
     text-transform: uppercase;
     height:50px;
     margin-bottom: 0;
 }
 
-.navbar-custom li a {color: #FFF;}
+.navbar-default .navbar-nav>li>a:hover { color: orange;} 
+.navbar-default .navbar-nav>li>a { color: white;} 
 
-.navbar-custom li a { color: #FFF; } 
+.navbar-custom .navbar-brand { color:white;}
 
-.navbar-custom li a:hover { background-color: transparent;} 
-.navbar-custom li a:focus { background-color: transparent;} 
-
-.navbar-custom .navbar-brand:hover, 
-.navbar-custom  .navbar-brand:focus
+.navbar-custom .navbar-brand:hover 
 {
     background-color: transparent;
-    color: #FFF;
+    color: orange;
 }
-*/
+
+.navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a
+{background-color:transparent; color:orange;}
+
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:white;
+}
+
+.social-buttons {text-align: center;}
+
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+
+#login-dp .social-buttons a{
+    width: 60%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+#login-dp .social-buttons .btn-fb {
+    color: #fff;
+    background-color:#3b5998;
+}
+#login-dp .social-buttons .btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+#login-dp .social-buttons .btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+#login-dp .social-buttons .btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+
+#login-dp .social-buttons .btn-fb {margin-bottom:10px;}
+
+.bottom a {text-decoration: none; background-color:transparent; color:orange;}
+
+@media(max-width:768px){
+   
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+}
+
 
 ///carousel///
 

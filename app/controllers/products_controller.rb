@@ -4,8 +4,21 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
+      if params[:q]
+        search_term = params[:q]
+          # Return our filtered list here
+            if Rails.env.development?
+            @products = Product.where("name LIKE ?", "%#{search_term}%")
+            end
+          #Production
+            if Rails.env.production?
+            @products = Product.where("name ilike ?", "%#{search_term}%")
+            end
+      else
+        @products = Product.all
+      end
   end
+
 
   # GET /products/1
   # GET /products/1.json
@@ -28,7 +41,7 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       if @product.save
-        format.html { "/static_pages/landing_page" }
+        format.html { redirect_to "/static_pages/landing_page" }
         format.json { render :show, status: :created, location: @product }
       else
         format.html { render :new }
