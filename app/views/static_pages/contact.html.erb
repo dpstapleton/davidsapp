@@ -1,7 +1,9 @@
+<div class = "container contactform">
+
 <div class="row">
   <div class="col-lg-6 col-lg-offset-3">
 
-<h1>Contact Us</h1>
+<h4>Contact Us</h4>
 
 <%= flash[:notice] %>
 
@@ -10,30 +12,26 @@
 </div>
 </div>
 
-<div class="row">
+<div class="row cform">
   <div class="col-lg-6 col-lg-offset-3">
     <div class="form-group">
-      <%= label_tag :name, "Name" %>
       <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
     </div>      
     <div class="form-group">
-      <%= label_tag :email, "Email Address" %>
       <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
     </div>
-    <div class="form-group">
-      <%= label_tag :message, "Message" %>
+    <div class="form-group message">
       <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
-    </div>      
-  </div>
+    </div>
+     <div>      
+<%= submit_tag "Send", :id => 'submitcontact' %> 
 </div>
-<div class="row">
-  <div class="col-lg-6 col-lg-offset-3">
-<%= submit_tag "Send" %> 
 </div>
 </div>
 
 <% end %>
 
+</div>
 
 <!-- <form accept-charset="UTF-8" action="/" method="post">
   <input name="utf8" type="hidden" value="&#x2713;" />

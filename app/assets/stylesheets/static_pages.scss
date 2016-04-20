@@ -243,3 +243,23 @@ opacity: 1;
 }
 .carousel-fade .carousel-control {
 z-index: 2; }
+
+///contactform///
+
+.form-group {text-align:center; padding-top:20px;}
+
+
+.cform textarea, .cform input {
+    
+    color: orange;
+    background-color: #f2f2f2;
+    border: 0;
+    box-shadow: none;
+    text-align:center;
+}
+
+#submitcontact {background-color:darkgrey; text-transform: uppercase; color:orange;height:25px;}
+
+.contactform {margin-top: 50px; margin-bottom: 200px;}
+
+.message textarea {min-height: 200px}
