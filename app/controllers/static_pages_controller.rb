@@ -13,7 +13,7 @@ def thank_you
   @email = params[:email]
   @message = params[:message]
   ActionMailer::Base.mail(:from => @email,
-      :to => 'stapleton.dpl@gmail.com',
+      :to => 'stapleton.dp@gmail.com',
       :subject => "A new contact form message from #{@name}",
       :body => @message).deliver_now
 end
