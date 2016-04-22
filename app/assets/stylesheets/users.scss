@@ -1,0 +1,33 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.log-in{
+  max-width: 700px;
+  margin:auto;
+  text-align:center;
+  padding-top:50px;
+  padding-bottom: 50px;
+}
+ 
+.panel-default>.panel-heading {background-color:orange;}
+ 
+.form-control{
+  width: 800px;
+  text-align: center;
+  margin:auto;
+  float:none;
+}
+ 
+.panel-body p{
+  color:#555;
+}
+
+.form-group {text-align:center;}
+
+.text-a {float:none;}
+
+#submit {border-color:black; color:black; background-color: white}
+
+#log-opt:hover {text-decoration: none; background-color: transparent; color:black;}

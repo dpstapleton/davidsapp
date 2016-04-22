@@ -7,7 +7,7 @@ body {
 }
 
 p, ol, ul, td {
-  font-family: 'Montserrat', sans-serif;
+  font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
@@ -71,12 +71,3 @@ div {
     list-style: square;
   }
 }
-
-
-/*textarea {width: 400px; text-align: center;}
-
-textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {   
-    
-    border-color:orange;
-    
-}*/

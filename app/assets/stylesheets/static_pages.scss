@@ -58,7 +58,7 @@ footer h6 {
 
 .headerintro { 
 	display: table;
-	background-color:black;
+	background-color:rgb(255, 255, 255) transparent;
     background: url(/assets/muso.jpg) no-repeat center bottom ;
   	width: 100%;
     height: 95vh;
@@ -72,16 +72,22 @@ footer h6 {
 
 }
 
-.intro-button {
+.btn-signup  {
 
 	text-shadow:none;
 	background-color: black;
-	color:white;
     margin: -20px -50px; 
     position:relative;
     top:50%; 
     left:50%;
     border: none;
+}
+
+a.btn.btn-signup {
+
+    background-color: black; 
+    color:orange;  
+    margin-top: 50px;
 }
 
 #headertext a {
@@ -114,9 +120,28 @@ p {
 	color:black;
 	text-align: center; }
 
-///navbar///	
+///navbar///
+
+
+.nav>li>a {
+    position: relative;
+    display: block;
+   /* padding: 15px 15px;*/
+    color:white;
+     padding-top: 15px; 
+}
+
+.nav>li>a:hover {background-color: transparent; color:orange;}
+
+.navbar-text {background-color: transparent; margin:0; padding-right: 10px;}
 
 .btn-search:hover {background-color: orange; color:white;}
+
+.btn-search {max-height: 30px}
+
+.navbar-default .navbar-text {color:orange;}
+
+/*#linbav a {color:orange;}*/
 
 .navbar-custom {
 
@@ -129,7 +154,7 @@ p {
 .navbar-default .navbar-nav>li>a:hover { color: orange;} 
 .navbar-default .navbar-nav>li>a { color: white;} 
 
-.navbar-custom .navbar-brand { color:white;}
+.navbar-custom .navbar-brand, .linnav { color:white; display:inline-block;}
 
 .navbar-custom .navbar-brand:hover 
 {
@@ -140,7 +165,7 @@ p {
 .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a
 {background-color:transparent; color:orange;}
 
-#login-dp{
+/*#login-dp{
     min-width: 250px;
     padding: 14px 14px 0;
     overflow:hidden;
@@ -193,7 +218,7 @@ p {
         border-top:0 none;
     }
 }
-
+*/
 
 ///carousel///
 
@@ -263,3 +288,7 @@ z-index: 2; }
 .contactform {margin-top: 50px; margin-bottom: 200px;}
 
 .message textarea {min-height: 200px}
+
+///carousel///
+
+.lin {max-height: 20px;}
