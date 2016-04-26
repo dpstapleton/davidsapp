@@ -46,8 +46,8 @@ config.action_mailer.smtp_settings = {
       port: 587,
       authentication: "plain",
       enable_starttls_auto: true,
-      user_name: "stapleton.dp@gmail.com",
-      password: "Newforms23" 
+      user_name: "",
+      password: "" 
 
   }
 
