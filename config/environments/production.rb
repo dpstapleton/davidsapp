@@ -89,4 +89,13 @@ Rails.application.configure do
 
   }
 
+    config.paperclip_defaults = {
+  :storage => :s3,
+  :s3_credentials => {
+    :bucket => ENV['paperclipphotos'],
+    :access_key_id => ENV['AKIAIAMRXVCQSDA7FSFQ'],
+    :secret_access_key => ENV['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']
+  }
+}
+
 end
