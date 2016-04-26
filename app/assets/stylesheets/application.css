@@ -12,16 +12,6 @@
  *
  *= require_tree .
  *= require_self
- */
+ 
 
-.alert {
-	margin:0;
-	background-color:#000;
-	border-color: orange;
-<<<<<<< HEAD
-	color:#fff;}
-=======
-	color:#fff}
->>>>>>> 0fced153b3140b9199e3261493f29e7ec30bb944
-}
 
