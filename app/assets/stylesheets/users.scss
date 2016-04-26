@@ -1,0 +1,77 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+// User Login Styling
+
+.log-in{
+  max-width: 700px;
+  margin:auto;
+  text-align:center;
+  padding-top:50px;
+  padding-bottom: 50px;
+}
+ 
+.panel-default>.panel-heading {background-color:orange;}
+ 
+.form-control{
+
+  text-align: center;
+  margin:auto;
+  float:none;
+}
+ 
+.panel-body p{
+  color:#555;
+}
+
+.form-group {text-align:center;}
+
+.text-a {float:none;}
+
+#submit {border-color:black; color:black; background-color: white}
+
+#log-opt:hover {text-decoration: none; background-color: transparent; color:black;}
+
+.table, th, .usertablehead, .newuser {text-align:center;}
+
+// Devise Navbar Styling
+
+.glyphicon-user {padding-left:10px; color:orange; padding-top:2px;}
+
+.round-image-50 {
+    background-color: white;
+    border: 1px solid orange;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    text-align: center;
+    img { width: 100% }
+    margin-top:5px;
+}
+
+.round-image-100 { 
+    background-color: white;
+    border: 2px solid orange;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%; 
+    height: 200px; 
+    width: 200px; 
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-align: center;
+    img { width: 100%; height:100%; }
+    }
+
+    .img-uploader {text-align: center;}
+
+.navbar-nav>li>.dropdown-menu {background-color: black}
+
+.dropdown-menu>li>a {color:white;}
+
+.dropdown-menu>li>a:visited {color:white;}

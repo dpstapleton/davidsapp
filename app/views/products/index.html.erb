@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <p id="notice"><%= notice %></p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 list">
+                        
+                        <h4>
+                        <%= link_to 'List Your Jeans', new_product_path, :class => 'btn btn-default' %></h4>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12">
+                    <h2 class="headline">Current Listings</h2>
+                </div>
+            </div>
+
+     <%= render "shared/product" %>
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,238 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+
+body {
+
+	margin: 0 0 100px 0; /* bottom = footer height */
+	font-family: 'Montserrat', sans-serif; }
+
+
+///footers//
+
+footer { 
+
+	left: 0;
+    bottom: 0;
+    height: 120px;
+    width: 100%;
+	position: absolute;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #F59B00; 
+	color:white;
+	text-align: center;
+
+}
+
+footer h6 { 
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color:white;
+	text-align: center;
+
+}
+
+.si { padding: 20px 5px 0 0 ;}
+
+#copy { padding-top: 30px; }
+
+.fl {
+	padding-top: 20px;
+	text-align:center;
+
+}
+
+.fl a {
+	color: white;
+}
+
+.fl a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+///intro///
+
+.headerintro { 
+	display: table;
+	background-color:rgb(255, 255, 255) transparent;
+    background: url(/assets/muso.jpg) no-repeat center bottom ;
+  	width: 100%;
+    height: 95vh;
+    /*margin-top:-20px;*/
+    color: white;
+    background-color: #000;
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+
+}
+
+.btn-signup  {
+
+	text-shadow:none;
+	background-color: black;
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+    border: none;
+}
+
+a.btn.btn-signup {
+
+    background-color: black; 
+    color:orange;  
+    margin-top: 50px;
+}
+
+#headertext a {
+
+	color:white;
+}
+
+.headerintro .headerbody {
+    display: table-cell;
+    vertical-align: middle;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.name {
+	text-align: center;
+    font-size: 5.5em;
+}
+
+.intro-text {
+	text-align: center;
+    font-size: 1.25em;
+}
+
+
+
+p {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: white; 
+	color:black;
+	text-align: center; }
+
+///navbar///
+
+
+.nav>li>a {
+    position: relative;
+    display: block;
+   /* padding: 15px 15px;*/
+    color:white;
+     padding-top: 15px; 
+}
+
+.nav>li>a:hover {background-color: transparent; color:orange;}
+
+.navbar-text {background-color: transparent; margin:0; padding-right: 10px;}
+
+.btn-search:hover {background-color: orange; color:white;}
+
+.btn-search {max-height: 30px}
+
+.navbar-default .navbar-text {color:orange;}
+
+.navbar-custom {
+
+    background-color: #303030;
+    text-transform: uppercase;
+    height:50px;
+    margin-bottom: 0;
+}
+
+.navbar-default .navbar-nav>li>a:hover { color: orange;} 
+.navbar-default .navbar-nav>li>a { color: white;} 
+
+.navbar-custom .navbar-brand, .linnav { color:white; display:inline-block;}
+
+.navbar-custom .navbar-brand:hover 
+{
+    background-color: transparent;
+    color: orange;
+}
+
+.navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a
+{background-color:transparent; color:orange;}
+
+
+///carousel///
+
+.caro {padding-top: 20px; padding-bottom: 40px;}
+
+.carousel-caption {font-size: 30px;}
+
+.caro-button { display:block; margin: 0 auto; width: 150px;}
+
+.carousel-indicators {display:none;}
+
+.carousel-inner .item {
+    width: 100%; /*slider width*/
+    max-height: 500px; /*slider height*/
+}
+
+.carousel .item img {
+	margin: 0 auto;
+    width: 40%; /*img width*/
+    max-height: 500px;
+}
+
+.glyphicon-chevron-left, .glyphicon-chevron-right {color:black;}
+
+.carousel-control.right, .carousel-control.left, .carousel-control {
+  background-image:none;
+}
+
+.carousel-control:hover { color:white; background-color: white; background-image: none;}
+
+.carousel-fade .carousel-inner .item {
+opacity: 0;
+transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+left: 0;
+opacity: 0;
+z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+opacity: 1;
+}
+.carousel-fade .carousel-control {
+z-index: 2; }
+
+///contactform///
+
+.form-group {text-align:center; padding-top:20px;}
+
+
+.cform textarea, .cform input {
+    
+    color: orange;
+    background-color: #f2f2f2;
+    border: 0;
+    box-shadow: none;
+    text-align:center;
+}
+
+#submitcontact {background-color:darkgrey; text-transform: uppercase; color:orange;height:25px;}
+
+.contactform {margin-top: 50px; margin-bottom: 200px;}
+
+.message textarea {min-height: 200px}
+
+///carousel///
+
+.lin {max-height: 20px;}

@@ -1,0 +1,97 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//Product Display\\
+
+.list h4 {
+    float: right;
+}
+
+.headline {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.description h1,h2,p {
+    text-align: center;
+}
+
+.jeans {
+    height: 300px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    margin-right: -14px;
+    margin-left: -14px;
+}
+
+.product-image-wrapper {
+    border: 1px solid #000;
+    margin-bottom: 30px;
+}
+
+.product-image-wrapper:hover {
+    border-right: 2px solid orange;
+    border-left: 2px solid orange;
+}
+
+.prodline,.edit {
+    padding-bottom: 50px;
+}
+
+.prodline h2 {
+    color: orange;
+    padding-bottom: 10px;
+}
+
+/*.form { text-align: center;}*/
+
+/*@media only screen and (max-device-width: 768px) {
+    h1 {
+        text-align: center;
+    }
+
+    .list h4 {
+        text-align: center;
+        padding-bottom: 20px;
+        float: none;
+    }
+}*/
+
+//Product Form\\
+
+.form-group {text-align:center;}
+
+.description {height:100px; padding-top:5px;}
+
+.form-horizontal .control-label {padding-top:17px; color:orange; text-align:left;}
+
+.form-actions {height:25px;}
+
+.mainform textarea, .mainform input {
+    
+    color: orange;
+    background-color: #f2f2f2;
+    border: 0;
+    box-shadow: none;
+    padding: 15px;
+    text-align:center;
+}
+
+#submit {background-color:darkgrey; text-transform: uppercase; color:orange; margin-top: 20px;}
+
+
+/*new page*/
+
+.newprod {text-align: center;}
+
+.mainform {padding-bottom: 250px;}
+
+.back {float:left; padding-top:20px;}
+
+.back a:hover {text-decoration: none; color:black; background-color: white}

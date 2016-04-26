@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Binje</title>
+    <link href=
+    "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel=
+    'stylesheet' type='text/css'>
+    <link href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+    rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %><%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <script src=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+    </script>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <%= csrf_meta_tags %>
+    <%= favicon_link_tag 'key.png' %>
+</head>
+
+<body>
+    
+    <%= render "shared/navbar" %>
+
+   <% if notice %>
+    <p id="notice" class="alert alert-info"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+    <p id="alert" class="alert alert-info"><%= alert %></p>
+    <% end %>
+
+    <%= yield %>
+
+    <footer>
+        <div class="container" id="footer">
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="fa fa-shopping-cart fa-3x"></i>
+
+                    <div class="row">
+                        <div class="fl col-md-3 col-sm-3">
+                            <a href="#">Home</a>
+                        </div>
+
+
+                        <div class="fl col-md-3 col-sm-3">
+                            <a href="#">About</a>
+                        </div>
+
+
+                        <div class="fl col-md-3 col-sm-3">
+                            <a href="#">FAQ</a>
+                        </div>
+
+
+                        <div class="fl col-md-3 col-sm-3">
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-3" id="copy">
+                    &copy; 2015 Binje
+                </div>
+
+
+                <div class="col-md-4 col-sm-3">
+                    <i class="si fa fa-facebook-square fa-3x"></i> <i class=
+                    "si fa fa-twitter-square fa-3x"></i> <i class=
+                    "si fa fa-instagram fa-3x"></i>
+                </div>
+            </div>
+        </div>
+        <!--/container-->
+    </footer>
+</body>
+</html>

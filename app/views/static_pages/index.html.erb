@@ -1,0 +1,24 @@
+<header class="headerintro">
+        <div class="headerbody">
+            <div class="my-container">
+                <div class="row" id="header-text">
+                    <div class="col-md-8 col-md-offset-2">
+                        <% if user_signed_in? %>
+                        <h1 class="name">Welcome Back To BINJE!</h1>
+                         <h4 class="intro-text">YOUR HOME FOR "BROKEN-IN" DRY DENIM</h4><br>
+                        <% else %>
+                        <h1 class="name">Welcome To Binje!</h1><br>
+                        <h4 class="intro-text">YOUR HOME FOR "BROKEN-IN" DRY DENIM</h4><br>
+                        <h4 class="intro-text">
+                        You must sign in or sign up before you can access our products</h4>
+                        <div class = "col-md-8 col-md-offset-2">
+                        <%= link_to new_user_registration_path, :class => "btn btn-signup btn-lg" do %>
+                       <i class="fa fa-plus-square" aria-hidden="true"></i> Sign Up
+                       </div>
+                        <% end %> 
+                        <% end %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
