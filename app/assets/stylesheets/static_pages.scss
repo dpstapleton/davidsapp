@@ -54,7 +54,6 @@ footer h6 {
 	color: white;
 }
 
-///intro///
 
 .headerintro { 
 	display: table;
@@ -120,8 +119,6 @@ p {
 	color:black;
 	text-align: center; }
 
-///navbar///
-
 
 .nav>li>a {
     position: relative;
@@ -163,8 +160,6 @@ p {
 .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a
 {background-color:transparent; color:orange;}
 
-
-///carousel///
 
 .caro {padding-top: 20px; padding-bottom: 40px;}
 
@@ -213,7 +208,6 @@ opacity: 1;
 .carousel-fade .carousel-control {
 z-index: 2; }
 
-///contactform///
 
 .form-group {text-align:center; padding-top:20px;}
 
@@ -232,7 +226,5 @@ z-index: 2; }
 .contactform {margin-top: 50px; margin-bottom: 200px;}
 
 .message textarea {min-height: 200px}
-
-///carousel///
 
 .lin {max-height: 20px;}
