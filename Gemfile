@@ -33,6 +33,8 @@ gem 'paperclip', '~> 4.1'
 
 gem 'jquery-rails'
 
+gem 'aws-sdk'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
