@@ -69,14 +69,14 @@
                 </li>
             </ul> -->
             <% if user_signed_in? %>
-            <form class="navbar-form navbar-right" role="search">
+            <!-- <form class="navbar-form" role="search">
                  <div class= "search">
                             <%= form_tag("/products", method: "get") do %>
                             <%= text_field_tag(:q) %>
                             <%= submit_tag("Search", class:"btn btn-search") %>
                             <% end %> 
                </div>
-               </form>
+               </form> -->
                <% else %>
                 <p class="navbar-text navbar-right">what you waiting for? <i class="fa fa-arrow-right" aria-hidden="true"></i></p> 
                  <% end %>

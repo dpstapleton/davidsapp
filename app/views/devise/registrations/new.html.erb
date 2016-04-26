@@ -13,6 +13,16 @@
   <%= devise_error_messages! %>
 
   <div class="form-group">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name, autofocus: true, class: "col-md-7 text-a" %>
+  </div><br>
+
+  <div class="form-group">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name, autofocus: true, class: "col-md-7 text-a" %>
+  </div><br>
+
+  <div class="form-group">
     <%= f.label :email %><br>
     <%= f.email_field :email, autofocus: true, class: "col-md-7 text-a" %>
   </div><br>
