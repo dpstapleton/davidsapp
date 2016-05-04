@@ -1,3 +1,5 @@
+/*generic css*/
+
 html {
     position: relative;
     min-height: 100%;
@@ -6,8 +8,15 @@ html {
 
 body {
 
+    width: 100%;
+    height: 100%;
+    font-family: Montserrat,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    padding:0;
 	margin: 0 0 100px 0; /* bottom = footer height */
 	font-family: 'Montserrat', sans-serif; }
+
+/*footer css*/    
 
 footer { 
 
@@ -51,13 +60,14 @@ footer h6 {
 	color: white;
 }
 
+/*header css*/  
 
-.headerintro { 
+.headerintro {
+
 	display: table;
-	background-color:rgb(255, 255, 255) transparent;
     background: url(/assets/muso.jpg) no-repeat center bottom ;
   	width: 100%;
-    height: 95vh;
+    height: 90vh;
     /*margin-top:-20px;*/
     color: white;
     background-color: #000;
@@ -92,6 +102,7 @@ a.btn.btn-signup {
 }
 
 .headerintro .headerbody {
+
     display: table-cell;
     vertical-align: middle;
     text-shadow: 2px 2px 2px #000;
@@ -109,13 +120,15 @@ a.btn.btn-signup {
 
 
 
-p {
+.intro-text p {
 	padding-top: 15px;
 	padding-bottom: 15px;
 	background-color: white; 
 	color:black;
 	text-align: center; }
 
+
+/*Nav css*/
 
 .nav>li>a {
     position: relative;
@@ -137,11 +150,14 @@ p {
 
 .navbar-custom {
 
-    background-color: #303030;
     text-transform: uppercase;
     height:50px;
     margin-bottom: 0;
-}
+    background-color: black;
+    &.transparent-nav {
+      background-color: transparent;
+    }
+} 
 
 .navbar-default .navbar-nav>li>a:hover { color: orange;} 
 .navbar-default .navbar-nav>li>a { color: white;} 
@@ -156,6 +172,22 @@ p {
 
 .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a
 {background-color:transparent; color:orange;}
+
+
+@media screen and (max-device-width: 375px) and (max-device-height: 667px) { 
+
+#submenu { 
+
+  top: 0;
+  right: 0;
+  left: 0;
+  min-height: 100%;
+  padding-top: 80px;}
+
+
+}
+
+/*Landing Page css*/
 
 
 .caro {padding-top: 20px; padding-bottom: 40px;}
@@ -205,6 +237,7 @@ opacity: 1;
 .carousel-fade .carousel-control {
 z-index: 2; }
 
+/*Contact Page css*/
 
 .form-group {text-align:center; padding-top:20px;}
 
@@ -220,8 +253,61 @@ z-index: 2; }
 
 #submitcontact {background-color:darkgrey; text-transform: uppercase; color:orange;height:25px;}
 
-.contactform {margin-top: 50px; margin-bottom: 200px;}
+.contactform {margin-top: 50px; margin-bottom: 100px;}
 
 .message textarea {min-height: 200px}
 
 .lin {max-height: 20px;}
+
+/*about section*/
+
+.aboutintro  {
+
+    display: table;
+    background: url(/assets/rawlee.jpg) no-repeat center center ;
+    width: 100%;
+    height: 40vh;
+    /*margin-top:-20px;*/
+    color: white;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.aboutbody {
+    display: table-cell;
+    vertical-align: middle;
+    text-shadow: 2px 2px 2px #000;}
+
+#about1 {padding-top: 20px; padding-bottom: 50px;}
+
+.about-text-p{padding-top: 100px;}
+
+.about-sign-up {text-align: center; padding-top: 120px;}
+
+.btn-about {
+
+    background-color: black;
+    border: none;}   
+
+
+
+a.btn.btn-about {
+
+    background-color: black; 
+    color:orange;  
+    margin-top: 50px; }
+
+.search {background-color: orange; padding-top: 10px; padding-bottom: 10px;}  
+
+.search-form {text-align: center;}
+
+.form-search { width:300px;}
+
+.search-btn {background-color: black;}
+
+.glyphicon-search {color:orange;}
+

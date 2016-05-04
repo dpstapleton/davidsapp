@@ -1,0 +1,16 @@
+<div class=" container-fluid search">
+  <div class="row">
+
+
+
+<div class= "search-form col-md-4 col-md-offset-4">
+                            <%= form_tag("/products", method: "get") do %>
+                            <%= text_field_tag(:q, 'Search Products...', class: "form-search", :onclick => 'if($(this).val()=="Search Products..."){$(this).val("");};') %>
+                            <%= button_tag(type: "submit", class: "btn search-btn", name: "commit", value: "conceal") do %>
+  <span class="glyphicon glyphicon-search"></span>
+<% end %> 
+ </div>
+
+  </div>
+  <% end %> 
+</div>

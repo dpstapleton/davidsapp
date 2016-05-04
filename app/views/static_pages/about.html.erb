@@ -1,10 +1,53 @@
-<section>
-  <div class="container">
-  <div class="row">
-      <div class="col-md-12 col-xs-12">	
-<h1>About</h1>
-<p>This is a web app which will allow you to search for used bikes in Berlin</p>
-</div>
-</div>
-</div>
-</section>
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <header class="aboutintro">
+        <div class="aboutbody">
+            <div class="container">
+                <div class="row" id="about-text">
+                    <div class="col-md-6 col-md-offset-2">
+                        <h1 class="name">About</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <section id="about1">
+            <div class="row">
+                <div class="col-md-4 about-text-p">
+                    <p>One of the best things about raw denim for me though, is
+                    how unique the jeans become. They mould and conform to your
+                    own body, so all of the fades and whiskering that have been
+                    created are all your own, so to me they are literally like
+                    wearable pieces of your life, creating art that can be
+                    lived in! It fascinates me! While I appreciate that raw
+                    denim is not for everyone as the thought of wearing the
+                    same jeans over and over without washing them for months
+                    can freak some people out, to me, it’s a passion.</p>
+                    <p>Breaking in a pair of dry jeans is a journey lasting six
+                    months. The outcome depends on how you travel. Sitting
+                    around in the office won’t grace the denim as much as if
+                    used while repairing motorcycles.</p>
+                </div>
+                <div class="col-md-4">
+                    <%= image_tag 'dryjeans.jpg', :class => "dryjeans img-responsive"%>
+                </div>
+                <div class="col-md-4 about-sign-up">
+                    <p>They all started out stiff and dry, were all loved and
+                    worn for a long time. Some of them have been repaired for
+                    free at our Repair Shops, and some have been repaired by
+                    the person who originally wore them. They all carry history
+                    in every rip and repair, like pages in a diary.</p><br>
+                    <p>Start Your Journey
+                    Now</p><%= link_to new_user_registration_path, :class => "btn btn-about btn-lg" do %><i aria-hidden="true"
+                    class="fa fa-plus-square"></i> Sign Up <%end %>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
