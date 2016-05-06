@@ -11,11 +11,6 @@ end
   def destroy
   end
 
-  def show
-   @comments = @product.order("RAND()").first(5)
-  end
- 
-
 private
 
   def comment_params
