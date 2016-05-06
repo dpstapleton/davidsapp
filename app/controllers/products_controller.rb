@@ -27,7 +27,7 @@ class ProductsController < ApplicationController
   # GET /products/1.json
   def show
     @comments = @product.comments.order("created_at DESC")
-    @comments = @product.comments.order("RANDOM()").first(1)
+    # @comments = @product.comments.order("RANDOM()").last(1)
   end
 
   # GET /products/new
