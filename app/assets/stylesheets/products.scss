@@ -99,3 +99,20 @@
     margin-right: auto}
 
 .show-price, .comment-title {text-align: center;}
+
+/*Pagenation*/
+
+.pagi {text-align: center}
+
+.pagination { 
+
+    display: inline-block;
+    margin: 0 auto;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.pagination a:hover { text-decoration: none; background-color: transparent; color:black; text-align: center;}
+
+.pagination a:visited { text-decoration: none; background-color: transparent; color:black; text-align: center;}

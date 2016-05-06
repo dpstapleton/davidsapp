@@ -7,9 +7,12 @@
         </div>
         <div class = "col-md-12">
             <p><%= comment.user.first_name %> <small><em><%= "#{time_ago_in_words(comment.created_at)} ago" %></em></small></p>
-           <div class="rated" data-score="<%= comment.rating %>"></div>
+           <div class="rated text-center" data-score="<%= comment.rating %>"></div>
             <p><%= comment.body %></p>
-        </div>
+            </div>
     <% end %>
+     <div class = "col-md-12 pagi">
+                <%= will_paginate @comments, :page_links => false %>
+                  </div>
         </div>
 </section>
