@@ -1,7 +1,7 @@
 <section>
 <hr>
 <div class="row product-reviews">
-    <% @comments.each do |comment| %>
+    <% @comment.each do |comment| %>
         	<div class = "col-md-12">
             <p class = "round-image-50 rating-pic"> <%= image_tag(comment.user.avatar.url(:thumb)) %> </p>
         </div>
@@ -12,7 +12,7 @@
             </div>
     <% end %>
      <div class = "col-md-12 pagi">
-                <%= will_paginate @comments, :page_links => false %>
+                <%= will_paginate @comment, :page_links => false %>
                   </div>
         </div>
 </section>
