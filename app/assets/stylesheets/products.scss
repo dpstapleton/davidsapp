@@ -78,6 +78,8 @@
 
 .mainform {padding-bottom: 250px;}
 
+/*Product Show*/
+
 .back {float:left; padding-top:20px;}
 
 .back a:hover {text-decoration: none; color:black; background-color: white}
@@ -88,4 +90,12 @@
 
 .show {padding-top: 40px; padding-bottom: 40px}
 
-.show-price {text-align: center;}
+.product-reviews {border: 1px solid; padding-top:20px; padding-bottom: 20px; }
+
+.rated, .rating, {text-align: center;}
+
+.rating-pic { display: block;
+    margin-left: auto;
+    margin-right: auto}
+
+.show-price, .comment-title {text-align: center;}
