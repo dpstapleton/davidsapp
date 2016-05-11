@@ -8,10 +8,12 @@
                             <p>Brand : <%= product.brand %></p>
                             <p>Price: £ <%= product.price %></p>
                             <p><a class="btn btn-default add-to-cart" href=
-                            "#"><i class="fa fa-shopping-cart"></i> Buy Now</a>
-                            <%= link_to 'Show', product, :class => 'btn btn-default'%>
+                            "#"><i class="fa fa-shopping-cart"></i> </a>
+                            <%= link_to '<i class="fa fa-eye" aria-hidden="true"></i>'.html_safe, product, :class => 'btn btn-default'%>
+                            <% if signed_in? && current_user.admin? %>
                             <%= link_to 'Edit', edit_product_path(product), :class => 'btn btn-default' %>
                             <%= link_to 'Destroy', product, :class => 'btn btn-default', method: :delete, data: { confirm: 'Are you sure?' } %></p>
+                              <%end %>
                         </div>
                     </div><!-- /col -->
                     <%end %>
