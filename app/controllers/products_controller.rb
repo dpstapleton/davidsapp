@@ -26,6 +26,7 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
+    @comments = @product.comments.order('created_at DESC').page(params[:page]).per_page(1)
   end
 
   # GET /products/new
@@ -44,7 +45,7 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       if @product.save
-        format.html { redirect_to "/static_pages/landing_page" }
+        format.html { redirect_to "/static_pages/index" }
         format.json { render :show, status: :created, location: @product }
       else
         format.html { render :new }

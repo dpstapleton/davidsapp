@@ -3,6 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+/*Products Page*/
+
+
 .list h4 {
     float: right;
 }
@@ -48,6 +51,8 @@
     padding-bottom: 10px;
 }
 
+/*New Product Form */
+
 .form-group {text-align:center;}
 
 .description {height:100px; padding-top:5px;}
@@ -73,6 +78,41 @@
 
 .mainform {padding-bottom: 250px;}
 
+/*Product Show*/
+
 .back {float:left; padding-top:20px;}
 
 .back a:hover {text-decoration: none; color:black; background-color: white}
+
+.product-name {border-bottom: 1px solid; height: 2em;}
+
+.line-break {border-bottom: 1px solid; height: 2em;}
+
+.show {padding-top: 40px; padding-bottom: 40px}
+
+.product-reviews {border: 1px solid; padding-top:20px; padding-bottom: 20px; }
+
+.rated, .rating, {text-align: center;}
+
+.rating-pic { display: block;
+    margin-left: auto;
+    margin-right: auto}
+
+.show-price, .comment-title {text-align: center;}
+
+/*Pagenation*/
+
+.pagi {text-align: center}
+
+.pagination { 
+
+    display: inline-block;
+    margin: 0 auto;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.pagination a:hover { text-decoration: none; background-color: transparent; color:black; text-align: center;}
+
+.pagination a:visited { text-decoration: none; background-color: transparent; color:black; text-align: center;}
