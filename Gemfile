@@ -68,3 +68,7 @@ group :production do
   gem 'pg'
 end
 
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
+end
+
