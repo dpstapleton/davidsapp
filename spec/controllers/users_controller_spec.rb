@@ -3,7 +3,9 @@ require 'rails_helper'
 describe UsersController, :type => :controller do
 
   before do
-    @user = User.create!(email: "45@gmail.com", password: "testingtesting")
+    # @user = User.create!(email: "46@gmail.com", password: "testingtesting")
+    # @user2 = User.create!(email: "55@gmail.com", password: "testingtesting")
+    @user = FactoryGirl.create(:user)
   end
 
  describe "GET #show" do
@@ -16,6 +18,7 @@ describe UsersController, :type => :controller do
         expect(response).to have_http_status(200)
         expect(assigns(:user)).to eq @user
       end
+
     end
 
     context "No user is logged in" do
