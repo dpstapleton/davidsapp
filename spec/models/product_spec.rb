@@ -21,4 +21,5 @@ it "shouldn't create a product becasue there is a missing name" do
 		expect(Product.new(color: "white")).to_not be_valid
 	end
 
+
 end

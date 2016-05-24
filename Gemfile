@@ -1,12 +1,20 @@
 source 'https://rubygems.org'
 
+gem 'devise'
+
+gem 'cancancan'
+
+gem 'paperclip', '~> 4.1'
+
+gem 'aws-sdk', '< 2.0'
+
+gem 'will_paginate', '~> 3.1.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
+
 # Use sqlite3 as the database for Active Record
-group :development, :test do
-gem 'sqlite3'
-end
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -25,19 +33,7 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'devise'
-
-gem 'cancancan'
-
-gem 'paperclip', '~> 4.1'
-
-gem 'jquery-rails'
-
-gem 'aws-sdk', '< 2.0'
-
-gem 'will_paginate', '~> 3.1.0'
-
-gem 'factory_girl_rails'
+gem 'listen', '~> 3.1.5'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -51,26 +47,35 @@ gem 'factory_girl_rails'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'sqlite3'
+end
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
+  gem 'factory_girl_rails'
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+  gem 'guard'
+  gem 'guard-rspec', require: false
+  gem 'guard-spork'
+  gem 'spork-rails'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
 end
 
-group :production do
-  gem 'pg'
-end
+# group :production do
+#   gem 'pg'
+# end
 
 group :production do
   gem 'rails_12factor'
   gem 'pg'
 end
 
-group :development, :test do
-  gem 'rspec-rails', '~> 3.0'
-end
+
 
