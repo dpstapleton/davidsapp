@@ -1,8 +1,8 @@
 <script
   src="https://checkout.stripe.com/checkout.js" class="stripe-button"
   data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-  data-image="/square-image.png"
-  data-name="Binje
+  data-image= "https://s3.amazonaws.com/stripe-uploads/acct_18Eg9xLkaFrqOEuvmerchant-icon-1464105255666-b-logo.jpg"
+  data-name="Binje"
   data-description="Jeans(£20.00)"
   data-amount="4500"
   data-currency="gbp">
