@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     resources :comments
 end
  
+  resources :payments, only: [:create]
 
   get 'static_pages/about'
 
@@ -25,6 +26,8 @@ end
   #   get 'products/:id' => 'catalog#view'
 
   post 'static_pages/thank_you'
+
+  post 'payments/create'
   
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
