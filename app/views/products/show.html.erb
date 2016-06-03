@@ -21,7 +21,7 @@
                      <div class="row show">
             <div class="col-md-4 col-md-offset-2">
                 <p>
-                <%= image_tag(@product.image_url, class: "jeans img-responsive") %>
+                <%= image_tag(@product.image_url, data_zoom_image: @product.image_url, class: "jeans img-responsive img-zoom") %>
                 </p>
                 <%= render "shared/new_comment" %>
             </div> 
