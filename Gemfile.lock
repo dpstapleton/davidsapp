@@ -36,6 +36,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    angularjs-rails (1.5.6)
     arel (6.0.3)
     aws-sdk (1.66.0)
       aws-sdk-v1 (= 1.66.0)
@@ -258,6 +259,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  angularjs-rails
   aws-sdk (< 2.0)
   byebug
   cancancan
