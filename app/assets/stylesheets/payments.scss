@@ -1,3 +1,23 @@
 // Place all the styles related to the payments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.orders-title {
+
+	text-align:center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.order-form {text-align:center; padding-bottom: 20px}
+
+.table-hover {text-align:center}
+
+.btn-order {
+
+	color:black;
+	background-color: white;
+	border-style: solid;
+    border-color: orange;
+}

@@ -8,12 +8,16 @@ class PaymentsController < ApplicationController
   	  # Create the charge on Stripe's servers - this will charge the user's card
       charge = Stripe::Charge.create(
         :amount => 2000, # amount in cents, again
-        :currency => "usd",
+        :currency => "gbp",
         :source => token,
         :description => params[:stripeEmail]
       )
      
-  		Order.create() if charge.paid
+       if charge.paid
+        Order.create(
+          product_id: @product_id, 
+          user_id: @user_id)
+      end
 
   		# we dont have to do anything here it should render payments/create.html.erb file
     
