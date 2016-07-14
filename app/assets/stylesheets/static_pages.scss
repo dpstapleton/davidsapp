@@ -16,13 +16,14 @@ body {
 	margin: 0 0 100px 0; /* bottom = footer height */
 	font-family: 'Montserrat', sans-serif; }
 
-/*footer css*/    
+/*footer css*/  
 
-footer { 
+#footer   {background-color: #F59B00;}
+
+#footer { 
 
 	left: 0;
     bottom: 0;
-    height: 120px;
     width: 100%;
 	position: absolute;
 	padding-top: 20px;
@@ -33,7 +34,7 @@ footer {
 
 }
 
-footer h6 { 
+#footer h6 { 
 	padding-top: 5px;
 	padding-bottom: 5px;
 	color:white;
@@ -59,6 +60,16 @@ footer h6 {
 	text-decoration: none;
 	color: white;
 }
+
+@media only screen and (max-device-width: 480px) {
+
+.social-icons { padding-bottom: 10px; }
+
+.navbar-collapse {max-height: 568px; background-color: black;}
+
+    }
+
+
 
 /*header css*/  
 
@@ -131,6 +142,7 @@ a.btn.btn-signup {
 /*Nav css*/
 
 .nav>li>a {
+    
     position: relative;
     display: block;
    /* padding: 15px 15px;*/
@@ -146,7 +158,7 @@ a.btn.btn-signup {
 
 .btn-search {max-height: 30px}
 
-.navbar-default .navbar-text {color:orange;}
+.navbar-default .navbar-text {color:orange; padding-top: 15px;}
 
 .navbar-custom {
 
@@ -174,7 +186,7 @@ a.btn.btn-signup {
 {background-color:transparent; color:orange;}
 
 
-@media screen and (max-device-width: 375px) and (max-device-height: 667px) { 
+/*@media screen and (max-device-width: 375px) and (max-device-height: 667px) { 
 
 #submenu { 
 
@@ -185,7 +197,7 @@ a.btn.btn-signup {
   padding-top: 80px;}
 
 
-}
+}*/
 
 /*Landing Page css*/
 
